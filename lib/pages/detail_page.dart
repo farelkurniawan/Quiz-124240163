@@ -1,26 +1,3 @@
-// import 'package:flutter/material.dart';
-// import '../models/culinaryModels.dart'; // Import modelnya
-
-// class DetailPage extends StatelessWidget {
-//   // Menyiapkan variabel penampung data yang dikirim
-//   final Culinary culinary;
-
-//   // Constructor wajib (required) menerima data culinary[cite: 4]
-//   const DetailPage({super.key, required this.culinary});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text(culinary.name), // Menampilkan nama dari data yang dikirim
-//       ),
-//       body: Center(
-//         child: Text('Detail dari masakan ${culinary.name} akan muncul di sini'),
-//       ),
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
 import '../models/culinaryModels.dart';
 
@@ -84,17 +61,6 @@ class DetailPage extends StatelessWidget {
                     'Asal Daerah: ${culinary.origin}',
                     style: const TextStyle(fontSize: 16, color: Colors.blueAccent),
                   ),
-                  
-                  // // Row untuk menampilkan beberapa info berjajar ke samping[cite: 2]
-                  // Row(
-                  //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  //   children: [
-                  //     _buildInfoBox('Tahun', culinary.flavor.toString()),
-                  //     _buildInfoBox('Halaman', '${culinary.spicyLevel} Hal'),
-                  //     _buildInfoBox('Rating', '⭐ ${culinary.servingTime}'),
-                  //   ],
-                  // ),
-                  // const SizedBox(height: 16),
                   
                   // Garis pembatas
                   const Divider(height: 32, thickness: 1),
@@ -160,17 +126,4 @@ class DetailPage extends StatelessWidget {
       ),
     );
   }
-
-//   // Fungsi bantuan (helper function) untuk membuat kotak info (Tahun, Halaman, Rating)
-//   // Ini dilakukan agar kita tidak perlu menulis ulang kode Column yang sama berkali-kali[cite: 2]
-//   Widget _buildInfoBox(String label, String value) {
-//     return Column(
-//       children: [
-//         Text(label, style: const TextStyle(color: Colors.grey, fontSize: 12)),
-//         const SizedBox(height: 4),
-//         Text(value, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
-//       ],
-//     );
-//   }
-
 }

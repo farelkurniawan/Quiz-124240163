@@ -1,17 +1,3 @@
-// import 'package:flutter/material.dart';
-
-// class LibraryPage extends StatelessWidget {
-//   const LibraryPage({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(title: const Text('List Page')),
-//       body: const Center(child: Text('Daftar masakan akan muncul di sini')),
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
 import '../models/culinaryModels.dart';
 import 'detail_page.dart';
